@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.10+commit.fc410830"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_logic",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_initializationCalldata",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "logic",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"author": "Anna Carroll",
+			"kind": "dev",
+			"methods": {},
+			"title": "InitializedProxy",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/InitializedProxy.sol": "InitializedProxy"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/InitializedProxy.sol": {
+			"keccak256": "0xd957cd18270713ddc1de14c62c2e040453b170238ff8e37ff24ba684d1caa82e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c56e3b72fb06159369b109c05f024c8cbb1a70dfb50c06a75d3b5f387cc79c06",
+				"dweb:/ipfs/QmW3qKq53VByccfX2eYUosNCSNfHFCHwGzXjN7a2CD3hV6"
+			]
+		}
+	},
+	"version": 1
+}

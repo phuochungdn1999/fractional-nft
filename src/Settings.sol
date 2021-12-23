@@ -16,7 +16,7 @@ contract Settings is Ownable, ISettings {
     uint256 public override minAuctionLength;
 
     /// @notice the shortest an auction can ever be
-    uint256 public constant minMinAuctionLength = 1 days;
+    uint256 public constant minMinAuctionLength = 500;
 
     /// @notice governance fee max
     uint256 public override governanceFee;
@@ -68,7 +68,7 @@ contract Settings is Ownable, ISettings {
 
     constructor() {
         maxAuctionLength = 2 weeks;
-        minAuctionLength = 3 days;
+        minAuctionLength = 500;
         feeReceiver = payable(msg.sender);
         minReserveFactor = 200;  // 20%
         maxReserveFactor = 5000; // 500%

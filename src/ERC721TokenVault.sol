@@ -341,7 +341,7 @@ contract TokenVault is ERC20Upgradeable, ERC721HolderUpgradeable {
 
         // If bid is within 15 minutes of auction end, extend auction
         if (auctionEnd - block.timestamp <= 15 minutes) {
-            auctionEnd += 15 minutes;
+            auctionEnd += 1 minutes;
         }
 
         _sendETHOrWETH(winning, livePrice);
